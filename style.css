@@ -29,7 +29,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* Main Styles
 /*=================================*/
 #top, #bottom, #left, #right {
-	background: #a5ebff;
+    z-index:3;
+	background: #FFB900;
 	position: fixed;
 	}
 	#left, #right {
@@ -206,7 +207,7 @@ pre {
 .site-title {
     font-family: 'Righteous',helvetica,sans-serif;
     font-size: 26px;
-    color: #90D4C5;
+    color: #FFB900;
     line-height: 1.5em;
     position: relative;
     z-index: 12;
@@ -217,10 +218,10 @@ pre {
     position: fixed;
 }
 .site-title a,
-.site-title a:visited { color: #90D4C5; }
+.site-title a:visited { color: #FF046E; }
 .site-title a:hover,
 .site-title a:active {
-    color: #90D4C5;
+    color: #FF046E;
     opacity: 0.8;
 }
 .site-title div { display: inline; }
@@ -236,7 +237,7 @@ pre {
     width: 90%;
 }
 .site-tagline a,
-.site-tagline a:visited { color: #90D4C5; }
+.site-tagline a:visited { color: #FF046E; }
 .site-tagline a:hover {
     color: #2c2c2c;
 }
@@ -267,7 +268,7 @@ pre {
     line-height: 14px;
 }
 .languages ul li a:hover {
-    color: #90D4C5; 
+    color: #FF046E; 
 }
 
 .languages ul li.active a {
@@ -276,6 +277,14 @@ pre {
 /*=================================*/
 /* Navigation Styles
 /*=================================*/
+.navvy {
+    position: fixed;
+    z-index: 999;
+    right: 100px;
+    top: 90px;
+    height: 54px;
+    width: 54px;
+}
 .cd-nav-trigger {
     position: fixed;
     z-index: 999;
@@ -642,7 +651,7 @@ div.video {
 .no-js div.audio,
 .no-js div.video,
 div.loaded { opacity: 1; }
-div.image img { width: 100%; }
+div.image img
  
 .view {
     cursor: -webkit-zoom-in;
